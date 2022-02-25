@@ -1,0 +1,5 @@
+HSET zz aa 1337
+HGET zz aa
+HSET zz bb "QQQQQQQQ"
+HGET zz bb
+HGETALL zz

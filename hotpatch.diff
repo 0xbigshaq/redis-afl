@@ -1,0 +1,12 @@
+diff --git a/./redis/src/networking.c b/./redis/src/networking.c
+index 50e4b71..6e4599b 100644
+--- a/./redis/src/networking.c
++++ b/./redis/src/networking.c
+@@ -2172,6 +2172,7 @@ void readQueryFromClient(connection *conn) {
+     /* There is more data in the client input buffer, continue parsing it
+      * in case to check if there is a full command to execute. */
+      processInputBuffer(c);
++     exit(0);
+ }
+
+ void getClientsMaxBuffers(unsigned long *longest_output_list,
