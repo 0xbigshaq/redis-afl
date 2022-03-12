@@ -1,7 +1,7 @@
 # redis-afl
-An automated(+beginner friendly) setup for fuzzing Redis w/ AFL++.
+An automated(+beginner friendly) setup for compiling and fuzzing Redis w/ AFL++.
 
-To read more about my 1st time fuzzing experience, [see this blogpost](fuzzing-redis-url)
+More info about the process can be found here: https://0xbigshaq.github.io/2022/03/10/fuzzing-harder-part1
 
 # Build
 To build, run:
@@ -40,7 +40,7 @@ To start fuzzing, just run `./fuzz.sh` file :^)
 
 ![img0](./stats-demo.png)
 
->**Note:** The fuzzing speed/execs per second will not be high if you don't have a strong machine. This can be solved in two approaches: The first approach is '_Trying Harder_', to apply this, just keep reading through the _Distributed Fuzzing_ section below. The 2nd approach is '_Trying Smarter_', this approach involves patching the server in a more specific way that cuts down the performance costs, more about it can be found [in this blogpost](fuzzing-smarter-post-url). 
+>**Note:** The fuzzing speed/execs per second will not be high if you don't have a strong machine. This can be solved in two approaches: The first approach is '_Trying Harder_', to apply this, just keep reading through the _Distributed Fuzzing_ section below. The 2nd approach is '_Trying Smarter_', this approach involves patching the server in a more specific way that cuts down the performance costs, such example can be found [here](https://github.com/0xbigshaq/apache-afl). 
 
 # Distributed Fuzzing
 
