@@ -58,7 +58,7 @@ The setup in this repo is based on [VolatileMinds approach from 2015](https://vo
 - [X] Adding instructions for scaled/Distributed Fuzzing
 - [X] Fixing compile flags for easier crash analysis (now side-dependencies are compiled with debug information, such as the embedded lua interpreter, etc.)
 - [X] Use `AFL_PRELOAD` instead of `LD_PRELOAD` (although I didn't notice a change, some docs are suggesting to use ``AFL_PRELOAD`` since ``LD_PRELOAD`` might override the fuzzer binary and possibly make the fuzzer melt into itself)
-- [ ] Adding more samples for the `./input/` directory
+- [X] Adding more samples for the `./input/` directory
 - [ ] Applying persistent fuzzing(`AFL_LOOP`) to increase the _execs per second_ rate
 - [ ] Adding utils like _AddressSanitizer_(ASAN) _UndefinedBehaviorSanitizer_(UBSAN) to the final build
 
