@@ -1,0 +1,3 @@
+SET dolly "sheep"
+COPY dolly clone
+GET clone

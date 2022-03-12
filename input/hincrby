@@ -1,0 +1,4 @@
+HSET myhash field 5
+HINCRBY myhash field 1
+HINCRBY myhash field -1
+HINCRBY myhash field -10
